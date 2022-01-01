@@ -11,6 +11,7 @@ namespace BeautySalons
 {
     public class Program
     {
+        //First
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
