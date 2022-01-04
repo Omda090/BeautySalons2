@@ -61,7 +61,17 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  padding-top:100px;
+  font-family:myFont2;
+
 }
+
+font-face{
+
+    font-family:myFont2;
+}
+
+
 .footer {
   position: absolute;
   bottom: 0;

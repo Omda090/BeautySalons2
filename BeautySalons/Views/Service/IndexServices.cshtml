@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "IndexServices";
+}
+
+<h1>IndexServices</h1>
+
+<div class="col-md-3 thumbnail" style="margin-left:20px; margin-bottom:30px; height:380px;">
+    <img src="~/Care-face/1.jpg">
+    <h3> The BeautyLand </h3>
+    <h5>    العناية بالوجه </h5>
+    @*<button class="btn btn-default"> التفاصيل </button>*@
+    <a class="collapse-item" asp-controller="Service" asp-action="CareFace">التفاصيل</a>
+</div>
+<div class="col-md-3 thumbnail" style="margin-left:20px; margin-bottom:30px; height:380px;">
+    <img src="~/Care-heair/1.jpg">
+    <h3> The BeautyLand </h3>
+    <h5>    العناية بالشعر </h5>
+    <a class="collapse-item" asp-controller="Service" asp-action="Carehear">التفاصيل</a>
+
+</div>
+<div class="col-md-3 thumbnail" style="margin-left:20px; margin-bottom:30px; height:380px;">
+    <img src="~/Care-body/1.jpg">
+    <h3> The BeautyLand </h3>
+    <h5> قسم   العناية بالجسم </h5>
+    <a class="collapse-item" asp-controller="Service" asp-action="Carebody">التفاصيل</a>
+
+</div>
+<div class="col-md-3 thumbnail" style="margin-left:20px; margin-bottom:30px; height:380px;">
+    <img src="~/Care-skin/1.jpg">
+    <h3> The BeautyLand </h3>
+    <h5> قسم   العناية بالبشرة </h5>
+    <a class="collapse-item" asp-controller="Service" asp-action="CareSkin">التفاصيل</a>
+
+</div>

@@ -36,13 +36,22 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="IndexBeauty"> الرئيسية</a>
+                                    <a class="collapse-item" asp-controller="Beauty" asp-action="IndexBeauty"> الرئيسية</a>
+
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">خدمات المركز</a>
+                                    <a class="collapse-item" asp-controller="Service" asp-action="IndexServices">خدمات المركز</a>
+
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#"> فيديو</a>
+                                    <a class="collapse-item" asp-controller="Video" asp-action="IndexVideo"> فيديو</a>
+
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#"> المنتجات</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#"> حولنا</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="#"> اتصل بنا</a>
@@ -50,10 +59,10 @@
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="#">  شكاوي</a>
                                 </li>
-                                <li class="nav-item">
+                                @*<li class="nav-item">
                                     <a class="nav-link" href="#">Link</a>
-                                </li>
-                                <li class="nav-item dropdown">
+                                </li>*@
+                                @*<li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Dropdown
                                     </a>
@@ -63,7 +72,7 @@
                                         <li><hr class="dropdown-divider"></li>
                                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                                     </ul>
-                                </li>
+                                </li>*@
 
                             </ul>
                             <form class="d-flex">

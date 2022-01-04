@@ -8,7 +8,7 @@ namespace BeautySalons.Controllers
 {
     public class VideoController : Controller
     {
-        public IActionResult Index()
+        public IActionResult IndexVideo()
         {
             return View();
         }
