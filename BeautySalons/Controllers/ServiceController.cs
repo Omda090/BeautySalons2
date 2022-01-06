@@ -33,5 +33,25 @@ namespace BeautySalons.Controllers
         {
             return View();
         }
+
+        public IActionResult Product()
+        {
+            return View();
+        }
+
+        public IActionResult AboutUs()
+        {
+            return View();
+        }
+
+        public IActionResult CallUs()
+        {
+            return View();
+        }
+
+        public IActionResult Complain()
+        {
+            return View();
+        }
     }
 }

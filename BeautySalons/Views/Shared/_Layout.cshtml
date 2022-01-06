@@ -17,15 +17,15 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 @*<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-            <ul class="navbar-nav flex-grow-1">
-                <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Beauty" asp-action="IndexBeauty">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                </li>
-            </ul>
-        </div>*@
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Beauty" asp-action="IndexBeauty">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            </li>
+                        </ul>
+                    </div>*@
 
 
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -39,40 +39,55 @@
                                     <a class="collapse-item" asp-controller="Beauty" asp-action="IndexBeauty"> الرئيسية</a>
 
                                 </li>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
                                 <li class="nav-item">
                                     <a class="collapse-item" asp-controller="Service" asp-action="IndexServices">خدمات المركز</a>
 
                                 </li>
+                                &nbsp;&nbsp; &nbsp;&nbsp;
                                 <li class="nav-item">
                                     <a class="collapse-item" asp-controller="Video" asp-action="IndexVideo"> فيديو</a>
 
                                 </li>
+                                &nbsp;&nbsp; &nbsp;&nbsp;
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#"> المنتجات</a>
+                                    <a class="collapse-item" asp-controller="Service" asp-action="Product"> المنتجات</a>
+
                                 </li>
+                                &nbsp;&nbsp; &nbsp;&nbsp;
+
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#"> حولنا</a>
+                                    <a class="collapse-item" asp-controller="Service" asp-action="AboutUs"> حولنا</a>
+
                                 </li>
+                                &nbsp;&nbsp; &nbsp;&nbsp;
+
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#"> اتصل بنا</a>
+                                    <a class="collapse-item" asp-controller="Service" asp-action="CallUs"> اتصل بنا</a>
+
                                 </li>
+                                &nbsp;&nbsp; &nbsp;&nbsp;
+
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">  شكاوي</a>
+                                    <a class="collapse-item" asp-controller="Service" asp-action="Complain">  شكاوي</a>
+
                                 </li>
+                                &nbsp;&nbsp; &nbsp;&nbsp;
+
                                 @*<li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li>*@
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>*@
                                 @*<li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Dropdown
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                </li>*@
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Dropdown
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>*@
 
                             </ul>
                             <form class="d-flex">
@@ -103,5 +118,22 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
+    @*//Toast*@
+
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <img src="..." class="rounded me-2" alt="...">
+            <strong class="me-auto">Bootstrap</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            Hello, world! This is a Beauty Center
+        </div>
+    </div>
+
+    @*//EndToast*@
+
 </body>
 </html>
