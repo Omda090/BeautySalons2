@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - BeautySalons</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    @*<link rel="stylesheet" href="~/css/site.css" />*@
+    <link rel="stylesheet" href="~/css/StyleSheet.css" />
+    @*<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>*@
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -69,10 +72,10 @@
                                 &nbsp;&nbsp; &nbsp;&nbsp;
 
                                 @*<li class="nav-item">
-                                    <a class="collapse-item" asp-controller="Service" asp-action="Complain">  شكاوي</a>
+                                        <a class="collapse-item" asp-controller="Service" asp-action="Complain">  شكاوي</a>
 
-                                </li>
-                                &nbsp;&nbsp; &nbsp;&nbsp;*@
+                                    </li>
+                                    &nbsp;&nbsp; &nbsp;&nbsp;*@
 
                                 @*<li class="nav-item">
                                         <a class="nav-link" href="#">Link</a>
@@ -109,11 +112,42 @@
         </main>
     </div>
 
+    @*<div class="wrapper">
+            <h1>Socialize</h1>
+            <p>Social Media Icons</p>
+            <div class="media">
+                <ul>
+                    <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-codepen" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-github" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                </ul>
+            </div>
+        </div>*@
+
+
     <footer class="border-top footer text-muted">
+        <div class="footer-content">
+            <h3>Beauty-Salon-Center</h3>
+            <ul class="socials">
+           
+            <li><a href="https://en-gb.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://en-gb.facebook.com/"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.google.com/intl/ar/gmail/about/"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="https://youtube.com"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://linkedin.com"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright  &copy; Developed by <span>Omda</span></p>
+        </div>
+
         <div class="container">
             &copy; 2022 - BeautySalons - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
@@ -134,6 +168,6 @@
     </div>
 
     @*//EndToast*@
-
+    
 </body>
 </html>
