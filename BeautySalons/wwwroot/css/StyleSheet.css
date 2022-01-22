@@ -10,8 +10,8 @@ body {
     background: #fcfcfc;
 
 }
-.bg-white{
-    background-color:aquamarine;
+.bg-white {
+    background-color: #cacbcd !important;
 }
 .bg-light{
     background-color:white;
