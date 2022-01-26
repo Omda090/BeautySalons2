@@ -4,91 +4,117 @@
 }
 
 <h3>IndexBeauty</h3>
+<html>
+<head>
 
-@*<img src="https://www.zdjomate.com/wp-content/uploads/2015/07/1c.png" alt="" data-lazyload="https://www.zdjomate.com/wp-content/uploads/2015/07/1c.png" style="width: 1192.18px; height: 982.762px;">*@
+    <link rel="StyleSlideshow" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="StyleSlideshow" href="~/css/StyleSlideshow.css" />
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="StyleSlideshow" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+</head>
+<body>
 
-@*<strong style="transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 27px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 51px;">و التخلص من الوزن الزائد و الدهون</strong>
+    <h2>Automatic Slideshow</h2>
+    <p>Change image every 2 seconds:</p>
 
-<a href="https://www.zdjomate.com/newsletter/" class="rev_slider_button_white" style="font-size: 21px; transition: all 0.2s ease-out 0s; min-height: 0px; min-width: 0px; line-height: 28px; border-width: 1px; margin: 0px; padding: 6px 21px 5px; letter-spacing: 0px;">سجلى بريدك الألكترونى ليصلك احدث عروضنا</a>*@
+    <div class="slideshow-container">
 
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img_nature_wide.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
 
-<div class="jumbotron">
-    <h3>مرحبا بك عزيزي الزائر  </h3>
-    <p> مرحبا بك في صالون “سابيوتي بروفيشنال للسيدات”، سارعي في الحجز عبر موقعنا </p>
-    <p> متخصصون في توطين أرقى اساليب التجميل  </p>
-    <p> الاطلاع على أجود خلطات التجميل الطبيعية  </p>
-    <p>  المساعدة في الحصول على خلطات التجميل  المناسبة وذات الجودة والفاعلية </p>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img_snow_wide.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
 
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img_mountains_wide.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
 
-
-
-
-    @*<p> <a href="~/Images/1.jpg" class="btn btn-primary btn-lg"> المزيد بالتفاصيل  </a></p>*@
-
-    @*<div class="col-md-4">
-        <h2> Getting Second </h2>
-        <p>
-            APowerfull of Web
-        </p>
-        <p>
-            <a class="btn btn-default" href="~/Images/3.jpg"> </a>
-        </p>
     </div>
-    <div class="col-md-4">
-        <h2> Getting Second </h2>
-        <p>
-            APowerfull of Web
-        </p>
-        <p>
-            <a class="btn btn-default" href="~/Images/3.jpg"> </a>
-        </p>
-    </div>*@
+    <br>
 
-</div>
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
 
+    <script>
+        var slideIndex = 0;
+        showSlides();
 
-<div class="panel panel-default" style="padding:15px; ">
-    <div class="row">
-        <div class="col-md-3 thumbnail" style="margin-left:20px; margin-bottom:30px; height:380px;">
-            <img src="~/Care-face/3.jpg">
-            <h3> The BeautyLand </h3>
-            <h5> قسم تجميل  الوجه </h5>
-        </div>
-        <div class="col-md-3 thumbnail" style="margin-left:20px; margin-bottom:30px; height:380px;">
-            <img src="~/Images/5.jpg">
-            <h3> The BeautyLand </h3>
-            <h5> قسم   العناية بالشعر </h5>
-        </div>
-        <div class="col-md-3 thumbnail" style="margin-left:20px; margin-bottom:30px; height:380px;">
-            <img src="~/Care-body/3.jpg">
-            <h3> The BeautyLand </h3>
-            <h5> قسم   العناية بالجسم </h5>
-        </div>
-        <div class="col-md-3 thumbnail" style="margin-left:20px; margin-bottom:30px; height:380px;">
-            <img src="~/Images/4.jpg">
-            <h3> The BeautyLand </h3>
-            <h5> قسم   العناية بالبشرة </h5>
-        </div>
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
 
-
-
-
-
-
-
-
-
-        @*<div class="col-md-4">
-            <h2> Getting Second </h2>
-            <p>
-                APowerfull of Web
-            </p>
-            <p>
-                <a class="btn btn-default" href="~/Images/6.jpg"> </a>
-            </p>
-        </div>*@
+    <div class="jumbotron">
+        <h3>مرحبا بك عزيزي الزائر  </h3>
+        <p> مرحبا بك في صالون “سابيوتي بروفيشنال للسيدات”، سارعي في الحجز عبر موقعنا </p>
+        <p> متخصصون في توطين أرقى اساليب التجميل  </p>
+        <p> الاطلاع على أجود خلطات التجميل الطبيعية  </p>
+        <p>  المساعدة في الحصول على خلطات التجميل  المناسبة وذات الجودة والفاعلية </p>
 
 
     </div>
-</div>
+
+
+    <div class="panel panel-default" style="padding:15px; ">
+        <div class="row">
+            <div class="col-md-3 thumbnail" style="margin-left:20px; margin-bottom:30px; height:380px;">
+                <img src="~/Care-face/3.jpg">
+                <h3> The BeautyLand </h3>
+                <h5> قسم تجميل  الوجه </h5>
+            </div>
+            <div class="col-md-3 thumbnail" style="margin-left:20px; margin-bottom:30px; height:380px;">
+                <img src="~/Images/5.jpg">
+                <h3> The BeautyLand </h3>
+                <h5> قسم   العناية بالشعر </h5>
+            </div>
+            <div class="col-md-3 thumbnail" style="margin-left:20px; margin-bottom:30px; height:380px;">
+                <img src="~/Care-body/3.jpg">
+                <h3> The BeautyLand </h3>
+                <h5> قسم   العناية بالجسم </h5>
+            </div>
+            <div class="col-md-3 thumbnail" style="margin-left:20px; margin-bottom:30px; height:380px;">
+                <img src="~/Images/4.jpg">
+                <h3> The BeautyLand </h3>
+                <h5> قسم   العناية بالبشرة </h5>
+            </div>
+
+
+
+        </div>
+        </div>
+
+
+
+
+</body>
+
+
+
+</html>
+
+
